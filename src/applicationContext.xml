@@ -3,11 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="myFortune"
+          class="com.love2code.demo.classes.HappyFortuneService">
+
+    </bean>
 
 
     <bean id="myCoach"
-          class="com.love2code.demo.TrackCoach">
+          class="com.love2code.demo.classes.TrackCoach">
 
+        <constructor-arg ref="myFortune"/>
     </bean>
+
+
 
 </beans>
