@@ -6,7 +6,7 @@ public class myApp {
 
         //create the object
 
-        BaseBallCoach baseBallCoach = new BaseBallCoach();
+        Coach baseBallCoach = new TrackCoach();
 
         System.out.println(baseBallCoach.getDailyWorkout());
 
